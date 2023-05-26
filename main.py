@@ -84,3 +84,4 @@ root.bind("<Right>", lambda event: move_forward(move=True))  # Move forward on r
 root.bind("<Left>", lambda event: move_backward(move=True))  # Move backward on left arrow key press
 
 root.mainloop()
+#add
