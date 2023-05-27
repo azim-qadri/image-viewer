@@ -35,7 +35,7 @@ frame_width = root.winfo_screenwidth()
 frame_height = int(root.winfo_screenheight() // 1.08)
 frame = Frame(root, width=frame_width, height=frame_height)
 frame.grid(row=0, column=0, sticky="NW")
-directory = r"C:\Users\User\PycharmProjects\Viewer"
+directory = r"C:\Users\User\PycharmProjects\Viewer" # change directory here
 file_names = os.listdir(directory)
 image_extensions = [".jpg", ".jpeg", ".png", ".gif", ".ico"]
 image_files = [file for file in file_names if os.path.splitext(file)[1].lower() in image_extensions]
@@ -84,4 +84,3 @@ root.bind("<Right>", lambda event: move_forward(move=True))  # Move forward on r
 root.bind("<Left>", lambda event: move_backward(move=True))  # Move backward on left arrow key press
 
 root.mainloop()
-#add
